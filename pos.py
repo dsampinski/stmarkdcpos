@@ -29,7 +29,7 @@ while True:
         case '1':
             print('NEW RECEIPT\n')
             items = []
-            print('Scan items and Enter| Enter C to cancel\n')
+            print('Scan items and Enter | Enter C to cancel\n')
             itemCode = input('\t')
             while itemCode != '' and itemCode.lower() != 'c':
                 items.append(db.execute(f'SELECT * FROM items WHERE item_code = ?', (itemCode,)).fetchone())
