@@ -20,10 +20,10 @@ if not os.path.exists('./receipts/'): os.mkdir('./receipts/')
 screen = '0'
 while True:
     os.system('cls')
+    print('-= ST. MARK DC POS =-')
     match screen:
         case '0':
-            print('MAIN MENU\n')
-            print(f'1. New receipt\n2. Edit inventory\n3. Check item\n')
+            print(f'\n1. New receipt\n2. Edit inventory\n3. Check item\n')
             screen = input('Enter option number: ')
         
         case '1':
